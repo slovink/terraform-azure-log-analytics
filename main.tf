@@ -6,7 +6,6 @@ module "labels" {
   label_order = var.label_order
   repository  = var.repository
 }
-
 resource "azurerm_log_analytics_workspace" "main" {
   count                      = var.enabled && var.create_log_analytics_workspace == true ? 1 : 0
   name                       = format("%s-logs", module.labels.id)
