@@ -1,4 +1,23 @@
-# Terraform-azure-log-analytics
+<p align="center"> <img src="https://user-images.githubusercontent.com/50652676/62349836-882fef80-b51e-11e9-99e3-7b974309c7e3.png" width="100" height="100"></p>
+
+
+<h1 align="center">
+    Terraform Azure load-balancer
+</h1>
+
+<p align="center" style="font-size: 1.2rem;">
+    Terraform module to create load-balancer resource on Azure.
+     </p>
+
+<p align="center">
+
+<a href="https://www.terraform.io">
+  <img src="https://img.shields.io/badge/Terraform-v1.7.4-green" alt="Terraform">
+</a>
+<a href="https://github.com/slovink/terraform-azure-log-analytics/blob/master/LICENSE">
+  <img src="https://img.shields.io/badge/License-APACHE-blue.svg" alt="Licence">
+</a>
+
 
 # Terraform Azure Cloud Log-Analytics Module
 
@@ -22,7 +41,7 @@ for creating AZURE resources, and you can customize the inputs as needed. Below 
 
 ```hcl
 module "log-analytics" {
-  source                           = "./../"
+  source                           = "https://github.com/slovink/terraform-azure-log-analytics.git?ref=1.0.0"
   name                             = "app"
   environment                      = "test"
   resource_group_name              = module.resource_group.resource_group_name
@@ -47,7 +66,7 @@ Replace **MIT** and **slovink** with the appropriate license and your informatio
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=1.6.6 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=1.7.4 |
 | <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >=3.87.0 |
 
 ## Providers
