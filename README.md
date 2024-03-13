@@ -2,11 +2,11 @@
 
 
 <h1 align="center">
-    Terraform Azure load-balancer
+    Terraform Azure Log Analytics
 </h1>
 
 <p align="center" style="font-size: 1.2rem;">
-    Terraform module to create load-balancer resource on Azure.
+    Terraform module to create log-analytics resource on Azure.
      </p>
 
 <p align="center">
